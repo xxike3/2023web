@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+</head>
+
+<body>
+    <div class="container">
+        <div> 11</div> 
+        <section>
+            <h3>我是第一个屏幕</h3>
+            <p>
+                这是第一个页面
+            </p>
+            <form class="pageSelet">
+                <input type="name" class="onetxt" placeholder="name"></input>
+                <input type="text" class="onetxt" placeholder="name"></input>
+            </form>
+        </section>
+        <section>
+            <h3>我是第二个屏幕</h3>
+            <p>
+                这是第二个页面
+            </p>
+        </section>
+        <section>
+            <h3>我是第三个屏幕</h3>
+            <p>
+                这是第三个页面
+            </p>
+        </section>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .container {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    section {
+        box-sizing: border-box;
+       text-align: center;
+        height: 100%;
+        color: #0a0101;
+        scroll-snap-align: start;
+    }
+
+    section:nth-of-type(1) {
+        background-color: rgb(255, 255, 255);
+    }
+
+    section:nth-of-type(2) {
+        background-color: rgb(255, 255, 255);
+    }
+
+    section:nth-of-type(3) {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .name {
+        background-color: aquamarine;
+        flex: 1 0 130px;
+    }
+
+    .email {
+        flex: 1 0 130px;
+    }
+    
+</style>
+
+</html>
